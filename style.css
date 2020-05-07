@@ -341,17 +341,65 @@ template {
   display: none;
 }
 
-html {
-  font-size: calc(1vw + 1vh + .5vmin);
-}
-
 body {
   width: 100vw;
   height: 100vw;
 }
 
 #content-wrapper {
-  max-width: 50%;
+  max-width: 800px;
+  max-height: 100%;
   overflow: hidden;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0px 16px;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header #nav-tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header #nav-tabs li {
+  display: inline-block;
+  font-family: "Source Code Pro", monospace;
+  color: #fa804c;
+  text-transform: uppercase;
+  width: 120px;
+  border: 1px solid #fa804c;
+  border-bottom: none;
+  font-size: 13px;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  border-radius: 6px 6px 0px 0px;
+  cursor: pointer;
+  margin: 0px 2px;
+}
+
+header img {
+  width: 160px;
 }
 /*# sourceMappingURL=style.css.map */
