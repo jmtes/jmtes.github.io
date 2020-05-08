@@ -423,19 +423,19 @@ header #nav-tabs li a {
   text-transform: uppercase;
 }
 
-header #nav-tabs li.active-tab {
+header #nav-tabs li.active.tab {
   cursor: default;
 }
 
-header #nav-tabs li.active-tab span {
+header #nav-tabs li.active.tab span {
   display: inline;
 }
 
-header #nav-tabs li.active-tab a {
+header #nav-tabs li.active.tab a {
   display: none;
 }
 
-header #nav-tabs li.active-tab::after {
+header #nav-tabs li.active.tab::after {
   content: "";
   display: block;
   background-color: white;
@@ -515,7 +515,7 @@ header img {
   margin: 3.4rem 0;
 }
 
-#content-box main .inactive-section {
+#content-box main .inactive.section {
   display: none;
 }
 

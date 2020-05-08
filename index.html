@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,15 +19,15 @@
       <header>
         <nav>
           <ul id="nav-tabs">
-            <li id="about-tab" class="active-tab"><span>about</span><a href="">about</a></li>
-            <li id="portfolio-tab"><span>portfolio</span><a href="">portfolio</a></li>
+            <li id="about-tab" class="active tab"><span>about</span><a href="#" class="active tab">about</a></li>
+            <li id="portfolio-tab" class="inactive tab"><span>portfolio</span><a href="#" class="inactive tab">portfolio</a></li>
           </ul>
         </nav>
         <img src="images/avatar_desktop.png" alt="Avatar">
       </header>
       <div id="content-box">
         <main>
-          <div id="about-section">
+          <div id="about-section" class="active section">
             <h1>about me</h1>
             <div id="about-blurb">
               <p>Hello, I'm Juno! I'm a 20 year old developer based in southern
@@ -50,7 +51,7 @@
               <li><a href="mailto:juliennetesoro@gmail.com">email</a></li>
             </ul>
           </div>
-          <div id="portfolio-section" class="inactive-section">
+          <div id="portfolio-section" class="inactive section">
             <h1>portfolio</h1>
             <div id="coding-section">
               <h2>coding projects</h2>
