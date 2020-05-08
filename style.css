@@ -380,7 +380,7 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0px 16px;
+  padding: 0px 6px;
 }
 
 header nav {
@@ -403,34 +403,71 @@ header #nav-tabs li {
   border-bottom: none;
   font-size: 13px;
   text-align: center;
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 6px 6px 0px 0px;
   cursor: pointer;
   margin: 0px 2px;
 }
 
 header img {
-  width: 160px;
+  width: 136px;
+  height: 126px;
 }
 
 #content-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 578px;
-  overflow-y: scroll;
   border: 1px solid #fa804c;
   border-radius: 6px;
-}
-
-#content-box .padding-top,
-#content-box .padding-bottom {
-  display: none;
-}
-
-#content-box .padding-bottom {
-  bottom: 0;
+  padding: 40px 46px;
 }
 
 #content-box main {
-  padding: 24px 48px;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+#content-box main h1,
+#content-box main h2,
+#content-box main h3 {
+  font-family: "Source Code Pro", monospace;
+  color: #8e8e98;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#content-box main a {
+  font-family: "Source Code Pro", monospace;
+  color: #8e8e98;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+#content-box main h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#content-box main #about-blurb p {
+  font-family: "Work Sans", sans-serif;
+  color: #fa804c;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 2rem 0;
+}
+
+#content-box main #social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 3.4rem 0;
+}
+
+#content-box main #social-links li {
+  display: inline;
+  margin-right: 40px;
+  font-size: 16px;
 }
 
 #content-box main #portfolio-section {
