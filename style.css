@@ -566,6 +566,7 @@ header img {
   color: #fa804c;
   font-size: 14px;
   margin: 0.7rem 0;
+  padding: 0 12px;
 }
 
 #content-box main #portfolio-section .projects .project-card .project-links {
