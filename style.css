@@ -439,7 +439,7 @@ header img {
   height: 578px;
   border: 1px solid #fa804c;
   border-radius: 6px;
-  padding: 40px 46px;
+  padding: 40px 46px 24px 46px;
 }
 
 #content-box main {
@@ -462,6 +462,10 @@ header img {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.04em;
+}
+
+#content-box main a:hover {
+  text-decoration: underline;
 }
 
 #content-box main h1 {
@@ -492,7 +496,7 @@ header img {
   margin: 3.4rem 0;
 }
 
-#content-box main #about-section {
+#content-box main .inactive-section {
   display: none;
 }
 
@@ -523,7 +527,7 @@ header img {
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 32px;
+  padding: 20px;
 }
 
 #content-box main #portfolio-section .projects .project-card img {
