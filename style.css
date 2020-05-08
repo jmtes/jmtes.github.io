@@ -412,8 +412,27 @@ header #nav-tabs li {
   position: relative;
 }
 
+header #nav-tabs li span {
+  display: none;
+}
+
+header #nav-tabs li a {
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  color: #fa804c;
+  text-transform: uppercase;
+}
+
 header #nav-tabs li.active-tab {
   cursor: default;
+}
+
+header #nav-tabs li.active-tab span {
+  display: inline;
+}
+
+header #nav-tabs li.active-tab a {
+  display: none;
 }
 
 header #nav-tabs li.active-tab::after {
