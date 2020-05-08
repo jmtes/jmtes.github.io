@@ -365,9 +365,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main-wrapper {
+  padding-top: 2.5rem;
 }
 
 header {
@@ -476,5 +479,18 @@ header img {
 
 #content-box img {
   max-width: 100%;
+}
+
+footer p {
+  font-family: "Work Sans", sans-serif;
+  color: #fa804c;
+  opacity: 0.75;
+  font-size: 13px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #8e8e98;
 }
 /*# sourceMappingURL=style.css.map */
