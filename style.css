@@ -356,7 +356,6 @@ body {
 #content-wrapper {
   max-width: 800px;
   height: 100%;
-  overflow: hidden;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,11 +412,11 @@ header #nav-tabs li {
   position: relative;
 }
 
-header #nav-tabs li:first-child {
+header #nav-tabs li.active-tab {
   cursor: default;
 }
 
-header #nav-tabs li:first-child::after {
+header #nav-tabs li.active-tab::after {
   content: "";
   display: block;
   background-color: white;
@@ -445,7 +444,7 @@ header img {
 
 #content-box main {
   max-height: 100%;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 #content-box main h1,
@@ -478,20 +477,86 @@ header img {
   margin: 2rem 0;
 }
 
-#content-box main #social-links {
+#content-box main .links {
   list-style-type: none;
   padding: 0;
-  margin: 3.4rem 0;
 }
 
-#content-box main #social-links li {
+#content-box main .links li {
   display: inline;
   margin-right: 40px;
   font-size: 16px;
 }
 
-#content-box main #portfolio-section {
+#content-box main #social-links {
+  margin: 3.4rem 0;
+}
+
+#content-box main #about-section {
   display: none;
+}
+
+#content-box main #portfolio-section {
+  text-align: center;
+}
+
+#content-box main #portfolio-section h1 {
+  display: none;
+}
+
+#content-box main #portfolio-section h2 {
+  font-size: 24px;
+}
+
+#content-box main #portfolio-section .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#content-box main #portfolio-section .projects .project-card {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 32px;
+}
+
+#content-box main #portfolio-section .projects .project-card img {
+  width: 300px;
+  height: 218px;
+  border: 1px solid #fdb6a1;
+  border-radius: 6px;
+}
+
+#content-box main #portfolio-section .projects .project-card h3 {
+  font-size: 18px;
+  margin: 0.5rem 0;
+}
+
+#content-box main #portfolio-section .projects .project-card p {
+  font-family: "Work Sans", sans-serif;
+  color: #fa804c;
+  font-size: 14px;
+  margin: 0.7rem 0;
+}
+
+#content-box main #portfolio-section .projects .project-card .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#content-box main #portfolio-section .projects .project-card .project-links li {
+  font-size: 12px;
+  margin: 0px 20px;
 }
 
 #content-box img {
