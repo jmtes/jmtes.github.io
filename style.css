@@ -534,6 +534,10 @@ header img.mobile.avatar {
   margin: 3.4rem 0;
 }
 
+#content-box main #social-links li i {
+  display: none;
+}
+
 #content-box main .inactive.section {
   display: none;
 }
@@ -675,6 +679,21 @@ footer a {
     margin: 0;
     padding: 1rem 0;
   }
+  #content-box main #social-links li a:hover {
+    text-decoration: none;
+    color: #fa804c;
+  }
+  #content-box main #social-links li span {
+    display: none;
+  }
+  #content-box main #social-links li i {
+    display: inline;
+    border: 1px solid #fa804c;
+    color: #fa804c;
+    border-radius: 80px;
+    padding: 12px;
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: 612px) {
@@ -686,6 +705,9 @@ footer a {
 @media (max-width: 492px) {
   body {
     height: auto;
+  }
+  header {
+    padding: 0;
   }
   header nav {
     display: none;
@@ -704,6 +726,7 @@ footer a {
   #content-box {
     border: none;
     height: auto;
+    padding-top: 28px;
   }
   #content-box main {
     height: auto;
@@ -721,7 +744,7 @@ footer a {
     line-height: 24px;
   }
   #content-box main #social-links {
-    margin: 2rem auto;
+    margin: 2.4rem auto;
   }
   #content-box main #social-links li {
     font-size: 13px;
