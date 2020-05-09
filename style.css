@@ -636,7 +636,7 @@ footer a {
   }
   #content-box main #social-links {
     width: 90%;
-    margin: 2.4rem auto 0;
+    margin: 2.4rem auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -666,7 +666,6 @@ footer a {
 @media (max-width: 672px) {
   #content-box main #social-links {
     max-width: 412px;
-    margin: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
@@ -697,17 +696,14 @@ footer a {
 }
 
 @media (max-width: 612px) {
-  header img.desktop.avatar {
-    display: none;
-  }
-}
-
-@media (max-width: 492px) {
   body {
     height: auto;
   }
   header {
     padding: 0;
+  }
+  header img.desktop.avatar {
+    display: none;
   }
   header nav {
     display: none;
