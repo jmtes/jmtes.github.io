@@ -462,12 +462,12 @@ header #nav-tabs li.inactive.tab:hover {
   padding: 0.5rem 1rem 0.7rem 1rem;
 }
 
-header img.desktop-avatar {
+header img.desktop.avatar {
   width: 136px;
   height: 126px;
 }
 
-header img.mobile-avatar {
+header img.mobile.avatar {
   display: none;
 }
 
@@ -665,10 +665,10 @@ footer a {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   #content-box main #social-links li {
     text-align: center;
@@ -678,7 +678,7 @@ footer a {
 }
 
 @media (max-width: 612px) {
-  header img.desktop-avatar {
+  header img.desktop.avatar {
     display: none;
   }
 }
@@ -690,7 +690,7 @@ footer a {
   header nav {
     display: none;
   }
-  header img.mobile-avatar {
+  header img.mobile.avatar {
     display: inline-block;
     margin: auto;
     width: 146px;
@@ -724,7 +724,7 @@ footer a {
     margin: 2rem auto;
   }
   #content-box main #social-links li {
-    font-size: 14px;
+    font-size: 13px;
   }
   #content-box main #portfolio-section {
     margin-top: 6rem;
