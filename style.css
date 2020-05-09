@@ -531,6 +531,10 @@ header img {
   font-size: 24px;
 }
 
+#content-box main #portfolio-section #ui-section {
+  margin-top: 1.6rem;
+}
+
 #content-box main #portfolio-section .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,7 +562,7 @@ header img {
 
 #content-box main #portfolio-section .projects .project-card h3 {
   font-size: 18px;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0 0.5rem 0;
 }
 
 #content-box main #portfolio-section .projects .project-card p {
