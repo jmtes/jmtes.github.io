@@ -393,6 +393,12 @@ header #nav-tabs {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 header #nav-tabs li {
@@ -408,7 +414,7 @@ header #nav-tabs li {
   padding: 0.5rem 1rem;
   border-radius: 6px 6px 0px 0px;
   cursor: pointer;
-  margin: 0px 2px;
+  margin: 0px 4px;
   position: relative;
 }
 
@@ -445,6 +451,15 @@ header #nav-tabs li.active.tab::after {
   cursor: default;
   left: 0;
   bottom: -1px;
+}
+
+header #nav-tabs li.inactive.tab {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header #nav-tabs li.inactive.tab:hover {
+  padding: 0.5rem 1rem 0.7rem 1rem;
 }
 
 header img {
