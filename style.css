@@ -645,7 +645,7 @@ footer a {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 868px) {
   #content-box main #portfolio-section .projects .project-card {
     width: 100%;
     padding: 2px;
