@@ -462,9 +462,13 @@ header #nav-tabs li.inactive.tab:hover {
   padding: 0.5rem 1rem 0.7rem 1rem;
 }
 
-header img {
+header img.desktop-avatar {
   width: 136px;
   height: 126px;
+}
+
+header img.mobile-avatar {
+  display: none;
 }
 
 #content-box {
@@ -617,5 +621,122 @@ footer p {
 footer a {
   text-decoration: none;
   color: #8e8e98;
+}
+
+@media (max-width: 872px) {
+  #content-wrapper {
+    max-width: 80%;
+  }
+  #content-box main #about-blurb p {
+    margin: 1.6rem 0;
+  }
+  #content-box main #social-links {
+    width: 90%;
+    margin: 2.4rem auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #content-box main #social-links li {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  #content-box main #portfolio-section .projects .project-card {
+    width: 100%;
+    padding: 2px;
+    margin: 0.8rem 0;
+  }
+  #content-box main #portfolio-section .projects .project-card .project-links a {
+    font-size: 13px;
+  }
+  #content-box main #portfolio-section #ui-section {
+    margin-top: 2.8rem;
+  }
+}
+
+@media (max-width: 672px) {
+  #content-box main #social-links {
+    max-width: 412px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #content-box main #social-links li {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 612px) {
+  header img.desktop-avatar {
+    display: none;
+  }
+}
+
+@media (max-width: 492px) {
+  body {
+    height: auto;
+  }
+  header nav {
+    display: none;
+  }
+  header img.mobile-avatar {
+    display: inline-block;
+    margin: auto;
+    width: 146px;
+    height: 146px;
+    border: 1px solid #fdb6a1;
+    border-radius: 80px;
+  }
+  #content-wrapper {
+    max-width: 100%;
+  }
+  #content-box {
+    border: none;
+    height: auto;
+  }
+  #content-box main {
+    height: auto;
+    text-align: center;
+  }
+  #content-box main .inactive.section {
+    display: block;
+  }
+  #content-box main h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+  #content-box main #about-blurb p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #content-box main #social-links {
+    margin: 2rem auto;
+  }
+  #content-box main #social-links li {
+    font-size: 14px;
+  }
+  #content-box main #portfolio-section {
+    margin-top: 6rem;
+  }
+  #content-box main #portfolio-section h1 {
+    display: block;
+  }
+  #content-box main #portfolio-section h2 {
+    color: #fa804c;
+  }
+  footer p {
+    padding-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
