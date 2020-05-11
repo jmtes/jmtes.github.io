@@ -189,9 +189,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +199,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +210,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -263,8 +263,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type='checkbox'],
-[type='radio'] {
+[type="checkbox"],
+[type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* 1 */
@@ -275,8 +275,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,7 +284,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -294,7 +294,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type='search']::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -348,9 +348,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 0px;
-  /* Remove scrollbar space */
   background: transparent;
-  /* Optional: just make scrollbar invisible */
 }
 
 #content-wrapper {
@@ -385,11 +383,11 @@ header {
   padding: 0px 6px;
 }
 
-header nav {
+nav {
   display: inline-block;
 }
 
-header #nav-tabs {
+#nav-tabs {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -401,7 +399,7 @@ header #nav-tabs {
           align-items: flex-end;
 }
 
-header #nav-tabs li {
+#nav-tabs li {
   display: inline-block;
   font-family: "Source Code Pro", monospace;
   color: #fa804c;
@@ -418,31 +416,31 @@ header #nav-tabs li {
   position: relative;
 }
 
-header #nav-tabs li span {
+#nav-tabs li span {
   display: none;
 }
 
-header #nav-tabs li a {
+#nav-tabs li a {
   text-decoration: none;
   font-family: "Source Code Pro", monospace;
   color: #fa804c;
   text-transform: uppercase;
 }
 
-header #nav-tabs li.active.tab {
+#nav-tabs li.active.tab {
   cursor: default;
 }
 
-header #nav-tabs li.active.tab span {
+#nav-tabs li.active.tab span {
   display: inline;
 }
 
-header #nav-tabs li.active.tab a {
+#nav-tabs li.active.tab a {
   display: none;
 }
 
-header #nav-tabs li.active.tab::after {
-  content: '';
+#nav-tabs li.active.tab::after {
+  content: "";
   display: block;
   background-color: white;
   width: 100%;
@@ -453,21 +451,21 @@ header #nav-tabs li.active.tab::after {
   bottom: -1px;
 }
 
-header #nav-tabs li.inactive.tab {
+#nav-tabs li.inactive.tab {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-header #nav-tabs li.inactive.tab:hover {
+#nav-tabs li.inactive.tab:hover {
   padding: 0.5rem 1rem 0.7rem 1rem;
 }
 
-header img.desktop.avatar {
+img.desktop {
   width: 136px;
   height: 126px;
 }
 
-header img.mobile.avatar {
+img.mobile {
   display: none;
 }
 
@@ -702,13 +700,13 @@ footer a {
   header {
     padding: 0;
   }
-  header img.desktop.avatar {
+  header img.desktop {
     display: none;
   }
   header nav {
     display: none;
   }
-  header img.mobile.avatar {
+  header img.mobile {
     display: inline-block;
     margin: auto;
     width: 146px;
