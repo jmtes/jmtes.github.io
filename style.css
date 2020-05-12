@@ -756,4 +756,16 @@ footer a {
     padding-bottom: 2rem;
   }
 }
+
+.skip-link {
+  position: fixed;
+  opacity: 0;
+  font-family: "Source Code Pro", monospace;
+  color: #8e8e98;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
