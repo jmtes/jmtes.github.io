@@ -661,7 +661,7 @@ footer a {
   }
 }
 
-@media (max-width: 672px) {
+@media (max-width: 672px), (max-height: 840px) {
   #content-box main #social-links {
     max-width: 412px;
     display: -ms-grid;
@@ -693,7 +693,7 @@ footer a {
   }
 }
 
-@media (max-width: 612px) {
+@media (max-width: 612px), (max-height: 840px) {
   body {
     height: auto;
   }
@@ -715,7 +715,7 @@ footer a {
     border-radius: 80px;
   }
   #content-wrapper {
-    max-width: 100%;
+    max-width: 800px;
   }
   #content-box {
     border: none;
