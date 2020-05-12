@@ -402,10 +402,10 @@ nav {
 #nav-tabs li {
   display: inline-block;
   font-family: "Source Code Pro", monospace;
-  color: #fa804c;
+  color: #345374;
   text-transform: uppercase;
   width: 120px;
-  border: 1px solid #fa804c;
+  border: 1px solid #555560af;
   border-bottom: none;
   font-size: 13px;
   text-align: center;
@@ -423,7 +423,7 @@ nav {
 #nav-tabs li a {
   text-decoration: none;
   font-family: "Source Code Pro", monospace;
-  color: #fa804c;
+  color: #345374;
   text-transform: uppercase;
 }
 
@@ -473,7 +473,7 @@ img.mobile {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 578px;
-  border: 1px solid #fa804c;
+  border: 1px solid #555560af;
   border-radius: 6px;
   padding: 40px 46px 24px 46px;
 }
@@ -487,14 +487,14 @@ img.mobile {
 #content-box main h2,
 #content-box main h3 {
   font-family: "Source Code Pro", monospace;
-  color: #8e8e98;
+  color: #fa804c;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 #content-box main a {
   font-family: "Source Code Pro", monospace;
-  color: #8e8e98;
+  color: #fa804c;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.04em;
@@ -511,7 +511,7 @@ img.mobile {
 
 #content-box main #about-blurb p {
   font-family: "Work Sans", sans-serif;
-  color: #fa804c;
+  color: #345374;
   font-size: 18px;
   line-height: 32px;
   margin: 2rem 0;
@@ -577,7 +577,7 @@ img.mobile {
 #content-box main #portfolio-section .projects .project-card img {
   width: 300px;
   height: 218px;
-  border: 1px solid #fdb6a1;
+  border: 1px solid #5555605e;
   border-radius: 6px;
 }
 
@@ -588,7 +588,7 @@ img.mobile {
 
 #content-box main #portfolio-section .projects .project-card p {
   font-family: "Work Sans", sans-serif;
-  color: #fa804c;
+  color: #345374;
   font-size: 14px;
   margin: 0.7rem 0;
   padding: 0 12px;
@@ -614,7 +614,7 @@ img.mobile {
 
 footer p {
   font-family: "Work Sans", sans-serif;
-  color: #fa804c;
+  color: #345374;
   opacity: 0.75;
   font-size: 13px;
   text-align: center;
@@ -622,7 +622,7 @@ footer p {
 
 footer a {
   text-decoration: none;
-  color: #8e8e98;
+  color: #fa804c;
 }
 
 @media (max-width: 872px) {
@@ -678,18 +678,18 @@ footer a {
   }
   #content-box main #social-links li a:hover {
     text-decoration: none;
-    color: #fa804c;
+    color: #345374;
   }
   #content-box main #social-links li span {
     display: none;
   }
   #content-box main #social-links li i {
     display: inline;
-    border: 1px solid #fa804c;
-    color: #fa804c;
+    border: 1px solid #345374;
+    color: #345374;
     border-radius: 80px;
     padding: 12px;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 }
 
@@ -711,7 +711,7 @@ footer a {
     margin: auto;
     width: 146px;
     height: 146px;
-    border: 1px solid #fdb6a1;
+    border: 1px solid #5555605e;
     border-radius: 80px;
   }
   #content-wrapper {
@@ -750,7 +750,7 @@ footer a {
     display: block;
   }
   #content-box main #portfolio-section h2 {
-    color: #fa804c;
+    color: #345374;
   }
   footer p {
     padding-bottom: 2rem;
@@ -761,7 +761,7 @@ footer a {
   position: fixed;
   opacity: 0;
   font-family: "Source Code Pro", monospace;
-  color: #8e8e98;
+  color: #fa804c;
   text-decoration: none;
   cursor: default;
 }
