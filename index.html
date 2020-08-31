@@ -1,155 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juno Tesoro</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Juno Tesoro</title>
-  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/233c607dcc.js"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <a href="#main-content" class="skip-link">SKIP TO MAIN CONTENT</a>
-  <div id="content-wrapper">
-    <div id="main-wrapper">
-      <header>
-        <nav>
-          <ul id="nav-tabs">
-            <li id="about-tab" class="active tab"><span>about</span><a href="#"
-                class="active tab">about</a></li>
-            <li id="portfolio-tab" class="inactive tab"><span>portfolio</span><a
-                href="#" class="inactive tab">portfolio</a></li>
-          </ul>
-        </nav>
-        <img src="images/avatar_desktop.png" alt="An artist rendition of me"
-          class="desktop">
-        <img src="images/avatar_mobile.png" alt="An artist rendition of me"
-          class="mobile">
-      </header>
-      <div id="content-box">
-        <main id="main-content">
-          <div id="about-section" class="active section">
-            <h1>about me</h1>
-            <div id="about-blurb">
-              <p>Hello, I'm Juno! I'm a 20 year old developer based in southern
-                California.</p>
-              <p>I'm not actively seeking a position right now, but I'm
-                particularly interested in frontend work because of the visual
-                aspect! I want to not only help
-                make a digital experience work in implementation, but also make
-                it
-                pleasing for users in presentation!</p>
-              <p>Alongside coding, I self-study UX and graphic design, make
-                Twine
-                games, and dabble in 3D modeling.</p>
-            </div>
-            <ul id="social-links" class="links">
-              <li><a href="https://github.com/jmtes"
-                  aria-label="github"><span>github</span><i
-                    class="fab fa-github-alt fa-lg"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/julienne-tesoro/"
-                  aria-label="linkedin"><span>linkedin</span><i
-                    class="fab fa-linkedin-in fa-lg"></i></a>
-              </li>
-              <li><a href="https://twitter.com/jumicates"
-                  aria-label="twitter"><span>twitter</span><i
-                    class="fab fa-twitter fa-lg"></i></a></li>
-              <li><a href="mailto:juliennetesoro@gmail.com"
-                  aria-label="email"><span>email</span><i
-                    class="fas fa-envelope fa-lg"></i></a></li>
-            </ul>
-          </div>
-          <div id="portfolio-section" class="inactive section">
-            <h1>portfolio</h1>
-            <div id="coding-section">
-              <h2>coding projects</h2>
-              <div class="projects">
-                <!-- Project cards here -->
-                <div class="project-card">
-                  <img src="images/mybadtweets.png"
-                    alt="Photo of mybadtweets' UI" class="project-img">
-                  <h3>mybadtweets</h3>
-                  <p>web app that shows you your least popular tweets</p>
-                  <ul class="links project-links">
-                    <li><a href="https://mybadtweets.herokuapp.com/">site</a>
-                    </li>
-                    <li><a
-                        href="https://github.com/jmtes/mybadtweets">github</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="project-card">
-                  <img src="images/hbnb.png" alt="Photo of HBNB's UI"
-                    class="project-img">
-                  <h3>hbnb</h3>
-                  <p>an airbnb clone</p>
-                  <ul class="links project-links">
-                    <li><a
-                        href="https://github.com/jmtes/AirBnB_clone_v3">github</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="project-card">
-                  <img src="images/shell.png"
-                    alt="Photo of the shell I made in action"
-                    class="project-img">
-                  <h3>shell</h3>
-                  <p>simple unix command interpreter</p>
-                  <ul class="links project-links">
-                    <li><a
-                        href="https://github.com/jmtes/simple_shell">github</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div id="ui-section">
-              <h2>ui prototypes</h2>
-              <div class="projects">
-                <!-- Project cards here -->
-                <div class="project-card">
-                  <img src="images/site_prototype.png"
-                    alt="Photo of my personal site's prototype"
-                    class="project-img">
-                  <h3>personal site</h3>
-                  <p>you are there</p>
-                  <ul class="links project-links">
-                    <li><a
-                        href="https://www.figma.com/proto/E5KOXeRfZxXHLOdmEGV6hl/Personal-Site-Desktop?node-id=9%3A10&scaling=min-zoom">figma</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="project-card">
-                  <img src="images/spotify.png"
-                    alt="Photo of my replication of Spotify's UI"
-                    class="project-img">
-                  <h3>spotify</h3>
-                  <p>proposes ui changes to ease the searching/sorting of
-                    playlists</p>
-                  <ul class="links project-links">
-                    <li><a
-                        href="https://www.figma.com/proto/V4ifnA4HJJZpv20B6nOFuG/Spotify-Mockup?node-id=1%3A2&scaling=min-zoom">figma</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo" />
       </div>
-    </div>
-    <footer>
-      <p>illustration by <a href="https://twitter.com/caviluxx">caviluxx</a></p>
-    </footer>
-  </div>
-</body>
-
+    </header>
+    <main>
+      <h1>site under construction!</h1>
+    </main>
+  </body>
 </html>
