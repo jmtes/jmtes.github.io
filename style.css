@@ -45,7 +45,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -83,7 +83,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -189,9 +189,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +199,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +210,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -231,7 +231,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -263,10 +263,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -275,8 +275,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,7 +284,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -294,7 +294,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -341,437 +341,55 @@ template {
   display: none;
 }
 
+html {
+  font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
 body {
   width: 100vw;
   height: 100vh;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-#content-wrapper {
-  max-width: 800px;
-  height: 100%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-#main-wrapper {
-  padding-top: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 0px 6px;
-}
-
-nav {
-  display: inline-block;
-}
-
-#nav-tabs {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-#nav-tabs li {
-  display: inline-block;
-  font-family: "Source Code Pro", monospace;
-  color: #345374;
-  text-transform: uppercase;
-  width: 120px;
-  border: 1px solid #555560af;
-  border-bottom: none;
-  font-size: 13px;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  border-radius: 6px 6px 0px 0px;
-  cursor: pointer;
-  margin: 0px 4px;
+  width: 100%;
   position: relative;
 }
 
-#nav-tabs li span {
-  display: none;
-}
-
-#nav-tabs li a {
-  text-decoration: none;
-  font-family: "Source Code Pro", monospace;
-  color: #345374;
-  text-transform: uppercase;
-}
-
-#nav-tabs li.active.tab {
-  cursor: default;
-}
-
-#nav-tabs li.active.tab span {
-  display: inline;
-}
-
-#nav-tabs li.active.tab a {
-  display: none;
-}
-
-#nav-tabs li.active.tab::after {
-  content: "";
-  display: block;
-  background-color: white;
+.logo {
   width: 100%;
-  height: 8px;
-  position: absolute;
-  cursor: default;
-  left: 0;
-  bottom: -4px;
 }
 
-#nav-tabs li.inactive.tab {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+.logo img {
+  width: 60%;
+  margin: auto;
+  display: block;
+  transform: scale(1);
+  animation: scale 1.5s ease-in infinite alternate;
 }
 
-#nav-tabs li.inactive.tab:hover {
-  padding: 0.5rem 1rem 0.7rem 1rem;
+main {
+  font-family: 'Poppins', sans-serif;
 }
 
-img.desktop {
-  width: 136px;
-  height: 126px;
-}
-
-img.mobile {
-  display: none;
-}
-
-#content-box {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 578px;
-  border: 1px solid #555560af;
-  border-radius: 6px;
-  padding: 40px 46px 24px 46px;
-}
-
-#content-box main {
-  max-height: 100%;
-  overflow: scroll;
-}
-
-#content-box main h1,
-#content-box main h2,
-#content-box main h3 {
-  font-family: "Source Code Pro", monospace;
-  color: #773aa1;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-#content-box main a {
-  font-family: "Source Code Pro", monospace;
-  color: #773aa1;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-}
-
-#content-box main a:hover {
-  text-decoration: underline;
-}
-
-#content-box main h1 {
-  margin-top: 0;
-  font-size: 24px;
-}
-
-#content-box main #about-blurb p {
-  font-family: "Work Sans", sans-serif;
-  color: #345374;
-  font-size: 18px;
-  line-height: 32px;
-  margin: 2rem 0;
-}
-
-#content-box main .links {
-  list-style-type: none;
-  padding: 0;
-}
-
-#content-box main .links li {
-  display: inline;
-  margin-right: 40px;
-  font-size: 16px;
-}
-
-#content-box main #social-links {
-  margin: 3.4rem 0;
-}
-
-#content-box main #social-links li i {
-  display: none;
-}
-
-#content-box main .inactive.section {
-  display: none;
-}
-
-#content-box main #portfolio-section {
+main h1 {
   text-align: center;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px transparent;
+  transform: scale(1);
+  animation: scale 1.5s ease-in infinite alternate,
+    text-shadow 1.5s ease-in infinite alternate;
+  animation-delay: 1.5s;
 }
 
-#content-box main #portfolio-section h1 {
-  display: none;
-}
-
-#content-box main #portfolio-section h2 {
-  font-size: 24px;
-}
-
-#content-box main #portfolio-section #ui-section {
-  margin-top: 1.6rem;
-}
-
-#content-box main #portfolio-section .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#content-box main #portfolio-section .projects .project-card {
-  width: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px;
-}
-
-#content-box main #portfolio-section .projects .project-card img {
-  width: 300px;
-  height: 218px;
-  border: 1px solid #5555605e;
-  border-radius: 6px;
-}
-
-#content-box main #portfolio-section .projects .project-card h3 {
-  font-size: 18px;
-  margin: 0.75rem 0 0.5rem 0;
-}
-
-#content-box main #portfolio-section .projects .project-card p {
-  font-family: "Work Sans", sans-serif;
-  color: #345374;
-  font-size: 14px;
-  margin: 0.7rem 0;
-  padding: 0 12px;
-}
-
-#content-box main #portfolio-section .projects .project-card .project-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#content-box main #portfolio-section .projects .project-card .project-links li {
-  font-size: 12px;
-  margin: 0px 20px;
-}
-
-#content-box img {
-  max-width: 100%;
-}
-
-footer p {
-  font-family: "Work Sans", sans-serif;
-  color: #345374;
-  opacity: 0.75;
-  font-size: 13px;
-  text-align: center;
-}
-
-footer a {
-  text-decoration: none;
-  color: #773aa1;
-}
-
-@media (max-width: 872px) {
-  #content-wrapper {
-    max-width: 80%;
+@keyframes scale {
+  from {
+    transform: scale(1);
   }
-  #content-box main #about-blurb p {
-    margin: 1.6rem 0;
-  }
-  #content-box main #social-links {
-    width: 90%;
-    margin: 3.2rem auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #content-box main #social-links li {
-    margin-right: 0;
+  to {
+    transform: scale(1.1);
   }
 }
-
-@media (max-width: 868px) {
-  #content-box main #portfolio-section .projects .project-card {
-    width: 100%;
-    padding: 2px;
-    margin: 0.8rem 0;
-  }
-  #content-box main #portfolio-section .projects .project-card .project-links a {
-    font-size: 13px;
-  }
-  #content-box main #portfolio-section #ui-section {
-    margin-top: 2.8rem;
-  }
-}
-
-@media (max-width: 672px), (max-height: 840px) {
-  #content-box main #social-links {
-    max-width: 412px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  #content-box main #social-links li {
-    text-align: center;
-    margin: 0;
-    padding: 1rem 0;
-  }
-  #content-box main #social-links li a:hover {
-    text-decoration: none;
-    color: #345374;
-  }
-  #content-box main #social-links li span {
-    display: none;
-  }
-  #content-box main #social-links li i {
-    display: inline;
-    border: 1px solid #345374;
-    color: #345374;
-    border-radius: 80px;
-    padding: 12px;
-    opacity: 0.8;
-  }
-}
-
-@media (max-width: 612px), (max-height: 840px) {
-  body {
-    height: auto;
-  }
-  header {
-    padding: 0;
-  }
-  header img.desktop {
-    display: none;
-  }
-  header nav {
-    display: none;
-  }
-  header img.mobile {
-    display: inline-block;
-    margin: auto;
-    width: 146px;
-    height: 146px;
-    border: 1px solid #5555605e;
-    border-radius: 80px;
-  }
-  #content-wrapper {
-    max-width: 800px;
-  }
-  #content-box {
-    border: none;
-    height: auto;
-    padding-top: 28px;
-  }
-  #content-box main {
-    height: auto;
-    text-align: center;
-  }
-  #content-box main .inactive.section {
-    display: block;
-  }
-  #content-box main h1 {
-    text-align: center;
-    font-size: 36px;
-  }
-  #content-box main #about-blurb {
-    max-width: 612px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #content-box main #about-blurb p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  #content-box main #social-links {
-    margin: 2.4rem auto;
-  }
-  #content-box main #social-links li {
-    font-size: 13px;
-  }
-  #content-box main #portfolio-section {
-    margin-top: 6rem;
-  }
-  #content-box main #portfolio-section h1 {
-    display: block;
-  }
-  #content-box main #portfolio-section h2 {
-    color: #345374;
-  }
-  footer p {
-    padding-bottom: 2rem;
-  }
-}
-
-.skip-link {
-  position: fixed;
-  opacity: 0;
-  font-family: "Source Code Pro", monospace;
-  color: #773aa1;
-  text-decoration: none;
-  cursor: default;
-}
-
-.skip-link:focus {
-  opacity: 1;
-}
-/*# sourceMappingURL=style.css.map */
