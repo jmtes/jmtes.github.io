@@ -14,12 +14,16 @@ interface ProjectProps {
 
 const Project = ({ name, technologies, desc, links }: ProjectProps) => {
   return (
-    <section className='project'>
+    <section id={`project--${name}`} className='project'>
       <h3 className='project__name'>{name}</h3>
       <p className='project__tech'>Built with {technologies}</p>
       <p className='project__desc'>{desc}</p>
       <ul className='project__links'>
-        {/* Map each item in links to... a link */}
+        {links.map((link) => (
+          <li key={link.href}>
+            <a href={link.href}>{link.text}</a>
+          </li>
+        ))}
       </ul>
     </section>
   );
