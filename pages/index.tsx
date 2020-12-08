@@ -9,7 +9,7 @@ const Home = () => (
       <title>{siteTitle}</title>
     </Head>
     <main>
-      <img src='images/profile.jpg' alt='' />
+      <img src='images/profile.jpg' alt='A picture of me' />
       <h1>Hi, I'm Juno! I'm a software developer.</h1>
       <nav>
         <ul>
