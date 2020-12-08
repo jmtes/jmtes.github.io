@@ -30,7 +30,11 @@ const Layout = ({
           alt='A picture of me'
           className='sidebar__img'
         />
-        <h1 className='sidebar__title'>Juno Tesoro</h1>
+        <h1 className='sidebar__title'>
+          <Link href='/'>
+            <a>Juno Tesoro</a>
+          </Link>
+        </h1>
         <nav className='sidebar__nav'>
           <ul>
             <li>
@@ -52,7 +56,7 @@ const Layout = ({
         </nav>
       </div>
     )}
-    <main>{children}</main>
+    <main className={home && 'index'}>{children}</main>
   </div>
 );
 
