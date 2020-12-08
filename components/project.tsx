@@ -14,7 +14,7 @@ interface ProjectProps {
 
 const Project = ({ name, technologies, desc, links }: ProjectProps) => {
   return (
-    <section id={`project--${name}`} className='project'>
+    <section className={`project project--${name.toLowerCase()}`}>
       <h3 className='project__name'>{name}</h3>
       <p className='project__tech'>Built with {technologies}</p>
       <p className='project__desc'>{desc}</p>
