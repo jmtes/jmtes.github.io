@@ -7,7 +7,6 @@ import Link from 'next/link';
 
 // Importing a CSS module
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 
 // To use the imported CSS module's container class, simply use
 // styles.container as the returned div's className.
@@ -52,10 +51,10 @@ const Layout = ({
         <>
           <img
             src='/images/profile.jpeg'
-            className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+            className={`${styles.headerHomeImage}`}
             alt={name}
           />
-          <h1 className={utilStyles.heading2Xl}>{name}</h1>
+          <h1 className={''}>{name}</h1>
         </>
       ) : (
         <>
@@ -63,14 +62,14 @@ const Layout = ({
             <a>
               <img
                 src='/images/profile.jpeg'
-                className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                className={`${styles.headerImage} ${''}`}
                 alt={name}
               />
             </a>
           </Link>
-          <h2 className={utilStyles.headingLg}>
+          <h2 className={''}>
             <Link href='/'>
-              <a className={utilStyles.colorInherit}>{name}</a>
+              <a className={''}>{name}</a>
             </Link>
           </h2>
         </>
