@@ -4,6 +4,16 @@
   font-family: 'Source Code Pro', monospace;
 }
 
+.container--index {
+  display: flex;
+  justify-content: center;
+}
+
+.container--page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .container h2,
 .container h3 {
   text-transform: uppercase;
@@ -11,6 +21,10 @@
 
 .container h2 {
   font-style: italic;
+}
+
+.container main p {
+  line-height: 175%;
 }
 
 .container main a {

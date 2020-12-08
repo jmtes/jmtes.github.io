@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import styles from './layout.module.css';
 
-const name = 'Juno Tesoro';
 export const siteTitle = 'Juno Tesoro';
 
 const Layout = ({
@@ -13,7 +12,11 @@ const Layout = ({
   children: React.ReactNode;
   home?: boolean;
 }) => (
-  <div className={`${styles.container}`}>
+  <div
+    className={`${styles.container} ${
+      home ? styles['container--index'] : styles['container--page']
+    }`}
+  >
     <Head>
       <link rel='icon' href='/favicon.ico' />
       <meta name='description' content='This is my portfolio site!' />
