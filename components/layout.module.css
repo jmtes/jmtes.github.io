@@ -4,10 +4,12 @@
   font-family: 'Source Code Pro', monospace;
 }
 
-.container main h1,
-.container main h2,
-.container main h3 {
+.container h2,
+.container h3 {
   text-transform: uppercase;
+}
+
+.container h2 {
   font-style: italic;
 }
 
