@@ -21,7 +21,7 @@ import styles from './layout.module.css';
 // resulting in smaller bundle sizes.
 
 const name = 'Juno Tesoro';
-export const siteTitle = 'My First Next.js Site!';
+export const siteTitle = 'Juno Tesoro';
 
 const Layout = ({
   children,
@@ -46,35 +46,7 @@ const Layout = ({
       <meta name='og:title' content={siteTitle} />
       <meta name='twitter:card' content='summary_large_image' />
     </Head>
-    <header className={styles.header}>
-      {home ? (
-        <>
-          <img
-            src='/images/profile.jpeg'
-            className={`${styles.headerHomeImage}`}
-            alt={name}
-          />
-          <h1 className={''}>{name}</h1>
-        </>
-      ) : (
-        <>
-          <Link href='/'>
-            <a>
-              <img
-                src='/images/profile.jpeg'
-                className={`${styles.headerImage} ${''}`}
-                alt={name}
-              />
-            </a>
-          </Link>
-          <h2 className={''}>
-            <Link href='/'>
-              <a className={''}>{name}</a>
-            </Link>
-          </h2>
-        </>
-      )}
-    </header>
+    <header className={styles.header}>{home ? <></> : <></>}</header>
     <main>{children}</main>
     {!home && (
       <div className={styles.backToHome}>
