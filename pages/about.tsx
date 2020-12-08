@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import Layout, { siteTitle } from '../components/layout';
 
-const Home = () => (
-  <Layout home>
+const About = () => (
+  <Layout>
     <Head>
       <title>{`${siteTitle} - About`}</title>
     </Head>
@@ -51,4 +51,4 @@ const Home = () => (
   </Layout>
 );
 
-export default Home;
+export default About;
