@@ -48,13 +48,7 @@ const Layout = ({
     </Head>
     <header className={styles.header}>{home ? <></> : <></>}</header>
     <main>{children}</main>
-    {!home && (
-      <div className={styles.backToHome}>
-        <Link href='/'>
-          <a>← Back to home</a>
-        </Link>
-      </div>
-    )}
+    {!home && <div className={styles.backToHome}></div>}
   </div>
 );
 
