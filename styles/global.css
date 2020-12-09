@@ -353,3 +353,21 @@ template {
 * {
   box-sizing: border-box;
 }
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: white white;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 3px solid white;
+}
