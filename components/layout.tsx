@@ -61,7 +61,7 @@ const Layout = ({
         </div>
       </div>
     )}
-    <main className={home && 'index'}>{children}</main>
+    <main>{children}</main>
   </div>
 );
 
