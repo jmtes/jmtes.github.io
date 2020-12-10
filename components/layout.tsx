@@ -27,19 +27,17 @@ const Layout = ({
       />
     </Head>
     {!home && (
-      <div className={styles.sidebar}>
-        <div className={styles['sidebar__content']}>
-          <img
-            src='images/profile.jpg'
-            alt='A picture of me'
-            className={styles['sidebar__img']}
+      <>
+        <div className='navbar'>
+          <label htmlFor='menu-toggle' className='navbar__menu-btn'></label>
+          <input
+            type='checkbox'
+            name='menu-toggle'
+            id='menu-toggle'
+            className='navbar__menu-toggle'
           />
-          <h1 className={styles['sidebar__title']}>
-            <Link href='/'>
-              <a>Juno Tesoro</a>
-            </Link>
-          </h1>
-          <nav className={styles['sidebar__nav']}>
+          <h1 className='navbar__title'>Juno Tesoro</h1>
+          <nav className='navbar__menu'>
             <ul>
               <li>
                 <Link href='/about'>
@@ -59,7 +57,40 @@ const Layout = ({
             </ul>
           </nav>
         </div>
-      </div>
+        <div className={styles.sidebar}>
+          <div className={styles['sidebar__content']}>
+            <img
+              src='images/profile.jpg'
+              alt='A picture of me'
+              className={styles['sidebar__img']}
+            />
+            <h1 className={styles['sidebar__title']}>
+              <Link href='/'>
+                <a>Juno Tesoro</a>
+              </Link>
+            </h1>
+            <nav className={styles['sidebar__nav']}>
+              <ul>
+                <li>
+                  <Link href='/about'>
+                    <a>About</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/portfolio'>
+                    <a>Portfolio</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/contact'>
+                    <a>Contact</a>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </>
     )}
     <main>{children}</main>
   </div>
