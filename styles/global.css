@@ -375,3 +375,9 @@ template {
 ::selection {
   background-color: yellow;
 }
+
+@media (max-width: 770px) {
+  html {
+    font-size: calc(1vw + 1vh + 0.75vmin);
+  }
+}
