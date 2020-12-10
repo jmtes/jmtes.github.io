@@ -1,0 +1,76 @@
+/* Mobile Navbar Styles */
+
+.navbar {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.navbar__menu-btn {
+  display: inline-block;
+  height: 0.125rem;
+  width: 1.5rem;
+  background-color: black;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.navbar__menu-btn::before,
+.navbar__menu-btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: all 0.25s ease;
+}
+
+.navbar__menu-btn::before {
+  top: -0.5rem;
+  transform-origin: left center;
+}
+
+.navbar__menu-btn::after {
+  top: 0.5rem;
+  transform-origin: left center;
+}
+
+.navbar__menu-toggle {
+  display: none;
+}
+
+.navbar__title {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  text-shadow: -2px -2px yellow;
+}
+
+.navbar__menu {
+  position: absolute;
+  display: none;
+}
+
+.navbar__menu-toggle:checked + .navbar__menu-btn {
+  background-color: transparent;
+}
+
+.navbar__menu-toggle:checked + .navbar__menu-btn::before {
+  transform: rotate(45deg);
+  width: 94%;
+}
+
+.navbar__menu-toggle:checked + .navbar__menu-btn::after {
+  transform: rotate(-45deg);
+  width: 94%;
+}
