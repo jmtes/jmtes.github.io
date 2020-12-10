@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import styles from './layout.module.css';
 
+import Navbar from './navbar';
+
 export const siteTitle = 'Juno Tesoro';
 
 const Layout = ({
@@ -28,35 +30,7 @@ const Layout = ({
     </Head>
     {!home && (
       <>
-        <div className='navbar'>
-          <label htmlFor='menu-toggle' className='navbar__menu-btn'></label>
-          <input
-            type='checkbox'
-            name='menu-toggle'
-            id='menu-toggle'
-            className='navbar__menu-toggle'
-          />
-          <h1 className='navbar__title'>Juno Tesoro</h1>
-          <nav className='navbar__menu'>
-            <ul>
-              <li>
-                <Link href='/about'>
-                  <a>About</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/portfolio'>
-                  <a>Portfolio</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='/contact'>
-                  <a>Contact</a>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <Navbar />
         <div className={styles.sidebar}>
           <div className={styles['sidebar__content']}>
             <img
