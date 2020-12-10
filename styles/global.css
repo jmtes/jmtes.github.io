@@ -350,7 +350,9 @@ template {
   display: none;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
