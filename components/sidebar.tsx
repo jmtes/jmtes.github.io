@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from './sidebar.module.css';
+import styles from '../styles/sidebar.module.css';
 
 const Sidebar = () => (
   <div className={styles.sidebar}>

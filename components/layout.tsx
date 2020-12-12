@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import styles from './layout.module.css';
+import styles from '../styles/layout.module.css';
 
 import Navbar from './navbar';
 import Sidebar from './sidebar';
