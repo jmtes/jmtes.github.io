@@ -3,15 +3,21 @@ import Link from 'next/link';
 
 import Layout, { siteTitle } from '../components/layout';
 
+import styles from '../styles/index.module.css';
+
 const Home = () => (
   <Layout home>
     <Head>
       <title>{siteTitle}</title>
     </Head>
 
-    <img src='images/profile.jpg' alt='A picture of me' />
-    <h1>Hi, I'm Juno! I'm a software developer.</h1>
-    <nav>
+    <img
+      src='images/profile.jpg'
+      alt='A picture of me'
+      className={styles.image}
+    />
+    <h1 className={styles.intro}>Hi, I'm Juno! I'm a software developer. </h1>
+    <nav className={styles.nav}>
       <ul>
         <li>
           <Link href='/about'>
