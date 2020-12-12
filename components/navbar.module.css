@@ -13,6 +13,8 @@
   }
 }
 
+/* Menu Button and Toggle */
+
 .navbar__menu-btn {
   display: inline-block;
   height: 0.125rem;
@@ -20,6 +22,7 @@
   background-color: black;
   position: relative;
   transition: all 0.25s ease;
+  z-index: 9999;
 }
 
 .navbar__menu-btn::before,
@@ -48,18 +51,67 @@
   display: none;
 }
 
+/* Title */
+
 .navbar__title {
   margin: 0;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-style: italic;
   text-shadow: -2px -2px yellow;
+  z-index: 1;
 }
 
-.navbar__menu {
-  position: absolute;
-  display: none;
+.navbar__title a {
+  text-decoration: none;
 }
+
+/* (Hamburger) Menu */
+
+.navbar__menu {
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  left: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 770px) {
+  .navbar__menu {
+    padding: 2.4rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .navbar__menu {
+    padding: 2.25rem;
+  }
+}
+
+.navbar__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.navbar__menu ul li {
+  margin: 2rem 0;
+}
+
+.navbar__menu ul li a {
+  color: black;
+}
+
+/* Toggle Logic and Styling */
 
 .navbar__menu-toggle:checked + .navbar__menu-btn {
   background-color: transparent;
@@ -73,4 +125,8 @@
 .navbar__menu-toggle:checked + .navbar__menu-btn::after {
   transform: rotate(-45deg);
   width: 94%;
+}
+
+.navbar__menu-toggle:checked ~ .navbar__menu {
+  left: 0;
 }
