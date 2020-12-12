@@ -38,6 +38,13 @@
   }
 }
 
+.container--index main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container--page main {
   height: 100%;
   overflow: auto;
