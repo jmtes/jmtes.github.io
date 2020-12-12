@@ -16,7 +16,11 @@ const Navbar = () => {
         htmlFor='menu-toggle'
         className={styles['navbar__menu-btn']}
       ></label>
-      <h1 className={styles['navbar__title']}>Juno Tesoro</h1>
+      <h1 className={styles['navbar__title']}>
+        <Link href='/'>
+          <a>Juno Tesoro</a>
+        </Link>
+      </h1>
       <nav className={styles['navbar__menu']}>
         <ul>
           <li>
