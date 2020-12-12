@@ -34,11 +34,12 @@
 @media (max-width: 770px) {
   .container--page {
     grid-template-columns: auto;
+    grid-template-rows: 1fr 15fr;
   }
 }
 
 .container--page main {
-  max-height: 100%;
+  height: 100%;
   overflow: auto;
   padding-right: 10%;
 }
