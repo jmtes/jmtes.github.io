@@ -20,39 +20,39 @@
   }
 }
 
-.container--index {
+.index {
   display: flex;
   justify-content: center;
 }
 
-.container--page {
+.page {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 4rem;
 }
 
 @media (max-width: 770px) {
-  .container--page {
+  .page {
     grid-template-columns: auto;
     grid-template-rows: 1fr 15fr;
   }
 }
 
-.container--index main {
+.index main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.container--page main {
+.page main {
   height: 100%;
   overflow: auto;
   padding-right: 10%;
 }
 
 @media (max-width: 770px) {
-  .container--page main {
+  .page main {
     padding-right: 0;
   }
 }

@@ -4,18 +4,18 @@ import styles from '../styles/sidebar.module.css';
 
 const Sidebar = () => (
   <div className={styles.sidebar}>
-    <div className={styles['sidebar__content']}>
+    <div>
       <img
         src='images/profile.jpg'
         alt='A picture of me'
-        className={styles['sidebar__img']}
+        className={styles.img}
       />
-      <h1 className={styles['sidebar__title']}>
+      <h1 className={styles.title}>
         <Link href='/'>
           <a>Juno Tesoro</a>
         </Link>
       </h1>
-      <nav className={styles['sidebar__nav']}>
+      <nav className={styles.nav}>
         <ul>
           <li>
             <Link href='/about'>

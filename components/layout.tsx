@@ -14,11 +14,7 @@ const Layout = ({
   children: React.ReactNode;
   home?: boolean;
 }) => (
-  <div
-    className={`${styles.container} ${
-      home ? styles['container--index'] : styles['container--page']
-    }`}
-  >
+  <div className={`${styles.container} ${home ? styles.index : styles.page}`}>
     <Head>
       <link rel='icon' href='/favicon.ico' />
       <meta name='description' content='This is my portfolio site!' />

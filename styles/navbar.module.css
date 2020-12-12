@@ -15,7 +15,7 @@
 
 /* Menu Button and Toggle */
 
-.navbar__menu-btn {
+.menuBtn {
   display: inline-block;
   height: 0.125rem;
   width: 1.5rem;
@@ -25,8 +25,8 @@
   z-index: 9999;
 }
 
-.navbar__menu-btn::before,
-.navbar__menu-btn::after {
+.menuBtn::before,
+.menuBtn::after {
   content: '';
   display: inline-block;
   height: 100%;
@@ -37,23 +37,23 @@
   transition: all 0.25s ease;
 }
 
-.navbar__menu-btn::before {
+.menuBtn::before {
   top: -0.5rem;
   transform-origin: left center;
 }
 
-.navbar__menu-btn::after {
+.menuBtn::after {
   top: 0.5rem;
   transform-origin: left center;
 }
 
-.navbar__menu-toggle {
+.menuToggle {
   display: none;
 }
 
 /* Title */
 
-.navbar__title {
+.title {
   margin: 0;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -62,13 +62,13 @@
   z-index: 1;
 }
 
-.navbar__title a {
+.title a {
   text-decoration: none;
 }
 
 /* (Hamburger) Menu */
 
-.navbar__menu {
+.menu {
   position: fixed;
   display: flex;
   justify-content: left;
@@ -83,18 +83,18 @@
 }
 
 @media (max-width: 770px) {
-  .navbar__menu {
-    padding: 2.4rem;
+  .menu {
+    padding: 4rem;
   }
 }
 
 @media (max-width: 426px) {
-  .navbar__menu {
+  .menu {
     padding: 2.25rem;
   }
 }
 
-.navbar__menu ul {
+.menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -103,30 +103,30 @@
   font-style: italic;
 }
 
-.navbar__menu ul li {
+.menu ul li {
   margin: 2rem 0;
 }
 
-.navbar__menu ul li a {
+.menu ul li a {
   color: black;
 }
 
 /* Toggle Logic and Styling */
 
-.navbar__menu-toggle:checked + .navbar__menu-btn {
+.menuToggle:checked + .menuBtn {
   background-color: transparent;
 }
 
-.navbar__menu-toggle:checked + .navbar__menu-btn::before {
+.menuToggle:checked + .menuBtn::before {
   transform: rotate(45deg);
   width: 94%;
 }
 
-.navbar__menu-toggle:checked + .navbar__menu-btn::after {
+.menuToggle:checked + .menuBtn::after {
   transform: rotate(-45deg);
   width: 94%;
 }
 
-.navbar__menu-toggle:checked ~ .navbar__menu {
+.menuToggle:checked ~ .menu {
   left: 0;
 }

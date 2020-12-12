@@ -9,18 +9,15 @@ const Navbar = () => {
         type='checkbox'
         name='menu-toggle'
         id='menu-toggle'
-        className={styles['navbar__menu-toggle']}
+        className={styles.menuToggle}
       />
-      <label
-        htmlFor='menu-toggle'
-        className={styles['navbar__menu-btn']}
-      ></label>
-      <h1 className={styles['navbar__title']}>
+      <label htmlFor='menu-toggle' className={styles.menuBtn}></label>
+      <h1 className={styles.title}>
         <Link href='/'>
           <a>Juno Tesoro</a>
         </Link>
       </h1>
-      <nav className={styles['navbar__menu']}>
+      <nav className={styles.menu}>
         <ul>
           <li>
             <Link href='/about'>
